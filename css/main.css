@@ -1,0 +1,91 @@
+*{
+  font-family:'Noto Snas kr',sans-serif;
+  list-style: none;/*목록에 점 없애기*/
+  text-decoration:none;/*바로가기 밑줄 없애기 */
+  border-collapse: collapse;/*떨어져있는 선들 모아주기*/
+  margin: 0px;
+  padding: 0px;
+  color: black;
+}
+.intro_bg{
+ background-image:url("/img/intro_bg.jpg");
+  width:100%;
+  height: 718px;
+
+}.header{
+  display: flex;
+  width: 1280px;
+  margin: auto;
+  height: 86px;
+ }
+ .nav{
+   display: flex;
+   width: calc(1280px - 300px);
+   justify-content: flex-end;
+   line-height: 86px;
+ }
+.nav>li{
+  margin-left:84px;
+  color: white;
+}
+.searchArea{
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 24px;
+  background: rgba(0,0,0,0.0);
+}
+.searchArea>form>input{
+  border: none;
+  width: 250px;
+  height: 40px;
+  padding-left: 10px;
+  background: black;
+  background: rgba(0,0,0,0.4);
+  border-radius: 5px;
+}
+.searchArea>form>span{
+  width: 50px;
+  color:white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.intro_text{
+  width: 100%;
+  margin: 231px auto 231px auto;
+  text-align: center;
+}
+h1{
+  font-size: 48px;
+  font-weight:100;
+}
+.intro_text>h1,
+.intro_text>h4{
+  color: white;
+}
+.contant1{
+  font-size: 20px;
+  font-weight:lighter;
+}
+.amouent{
+  display: flex;
+  width: 1280px;
+  background: red;
+  margin: auto;/*중앙으로 와짐*/
+  position: relative;
+  top:-66px;
+}
+.amouent>li{
+  flex: 1;
+  background: cadetblue;
+  height: 132px;
+}
+.amouent>li>div{
+  text-align: center;
+  height: 57px;
+  background: green;
+  margin-top: 37px;
+}
+.amouent>li:not(:last-child)>div{
+  border-right:1px solid gray;
+}
