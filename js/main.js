@@ -1,9 +1,9 @@
 //변수
-let name="주동호 ";// let을 선언할 경우에는 바꿀수 있지만 let을 사용하지 않으면 바꾸지못함
+let name="네임";// let을 선언할 경우에는 바꿀수 있지만 let을 사용하지 않으면 바꾸지못함
 
-const name1="동호";//보통 변하지 않는 값음 const를 사용한다
-const name2='동호';
-const name3="동호";
+const name1="네임";//보통 변하지 않는 값음 const를 사용한다
+const name2='네임';
+const name3="네임";
 const name4=`내이름은 ${30+1}이고`;//파이썬 f프린트 같이 할려면 이렇게
 
 console.log(name4)//콘솔 로그를 띄우는 명령어
@@ -84,6 +84,54 @@ else {
   console.log("청소년 입니다.");
 }
 console.log("==============")
+
+//논리연산자
+let and=true&&true;//and 연산자 둘다 true일 경우에 출력
+let or=true||true;//or 연산자 둘중 하나만 true일 경우 출력
+let not=!true;//not 연산자 나오는거에 반대
+console.log(and)
+console.log(or)
+console.log(not)
+
+//반복문
+for (let i=0;i<=10;i++){
+  console.log(i)
+  console.log("안녕")
+}
+
+let i=0;
+
+while (i<10){
+  i++
+  console.log(i)
+  console.log("와일문이야")
+}
+
+let i=0;
+
+do {
+  console.log("이건 그냥 한번 출력")
+  i++
+  console.log(i)
+
+}while (i<10)
+
+while (true){
+  let answer=confirm("계속 반복할까요?")
+  if(!answer){
+    break
+  }
+}
+for(let i=0;i<=10;i++){
+  if(i%2){
+    continue
+  }
+  console.log(i)
+}
+
+
+
+
 
 
 
